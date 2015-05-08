@@ -1,0 +1,33 @@
+
+packSheet.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+fontsheet
+  rotate: false
+  xy: 1, 107
+  size: 210, 300
+  orig: 210, 300
+  offset: 0, 0
+  index: -1
+khhmmm
+  rotate: false
+  xy: 1, 5
+  size: 300, 100
+  orig: 300, 100
+  offset: 0, 0
+  index: -1
+dark
+  rotate: false
+  xy: 1, 1
+  size: 2, 2
+  orig: 2, 2
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 213, 405
+  size: 2, 2
+  orig: 2, 2
+  offset: 0, 0
+  index: -1
