@@ -33,6 +33,10 @@ public class Tile extends Box {
         selected = b;
     }
 
+    public void setTimer(float t) {
+        timer = t;
+    }
+
     public void update(float dt) {
 
         // tiles pop into view
@@ -41,10 +45,10 @@ public class Tile extends Box {
             width = (timer / maxTime) * totalWidth;
             height = (timer / maxTime) * totalHeight;
 
-            if (width > totalWidth)
-                width = totalWidth;
-            if (height > totalHeight)
-                height = totalHeight;
+            if (width < 0) width = 0;
+            if (height < 0) height = 0;
+            if (width > totalWidth) width = totalWidth;
+            if (height > totalHeight) height = totalHeight;
         }
     }
     public void render(SpriteBatch sb) {

@@ -27,6 +27,9 @@ public class PlayState extends State {
                         (row * tileSize) + boardOffset + (tileSize / 2),
                         tileSize,
                         tileSize);
+
+                // delay other tiles for dramatic entry
+                tiles[row][col].setTimer((-(tiles.length - row) - col) * 0.05f);
             }
         }
     }
